@@ -1,0 +1,213 @@
+#skills-pg {
+    display: grid;
+    grid-template-rows: 200px repeat(5, 1fr);
+    grid-row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    background-image: url("./images/🏁overlay\ ⛸️.jpg");
+    background-size: 20%;
+}
+#skills-pg h2 {
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #1a1a1a;
+    border: 3px solid #1a1a1a;
+}
+#skills-pg h2::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(60deg, #c0c0c0, #c6c6c6, #cccccc, 
+                                    #d2d2d2, #d9d9d9, #dfdfdf,
+                                    #e5e5e5, #ececec, #f2f2f2,
+                                    #f8f8f8, #ffffff) 50% 50%;
+    top: 0;
+    left: 0;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    transform: translate(-4px, -4px);
+    animation: services-animation 2s alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 10px;
+    z-index: -1;
+}
+#skills-pg h2::after {
+    content: "";
+    color: #1a1a1a;
+    z-index: -1;
+    font-size: 120px;
+    position: absolute;
+    text-align: center;
+    right: 60.5%;
+}
+#languages img {
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #a1a1a1e5;  
+}
+#web img {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #a1a1a1e5;   
+}
+#front-end img {
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #a1a1a1e5;   
+}
+#data-base img {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #a1a1a1e5;     
+}
+#back-end img {
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #a1a1a1e5;  
+}
+.skill-desc-white {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+.skill-desc-white ul {
+    list-style: none;
+    margin-right: 5px;
+    border: 3px solid #a1a1a1;
+    border-radius: 50% 10px;
+    background-color: #f1f1f1;
+}
+.skill-desc-white ul h3 {
+    text-align: center;
+    color: #FF6A3D;
+    font-size: x-large;
+}
+.skill-desc-white ul li {
+    text-align: center;
+}
+.skill-desc-white ul li p {
+    color: #1a1a1a;
+    font-size: larger;
+}
+.skill-desc-black {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;  
+}
+.skill-desc-black ul {
+    list-style: none;
+    margin-right: 5px;
+    border: 3px solid #a1a1a1;
+    border-radius: 50% 10px;
+    background-color: #1a1a1a;
+}
+.skill-desc-black ul h3 {
+    text-align: center;
+    color: #FF6A3D;
+    font-size: x-large; 
+}
+.skill-desc-black ul li {
+    text-align: center;
+}
+.skill-desc-black ul li p {
+    color: #f1f1f1;
+    font-size: larger;   
+}
+
+.fade-down {
+    animation: fade-in-down 0.5s ease-in forwards;
+}
+.show {
+    animation: show 0.5s ease-in forwards;
+}
+.fade-in-left {
+    animation: fade-in-left 0.5s ease-in forwards;
+}
+.fade-in-right {
+    animation: fade-in-right 0.5s ease-in forwards;
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;    
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 800px) {
+    #skills-pg {
+        grid-template-rows: 250px repeat(5, 1fr);
+    }
+    #skills-pg h2 {
+        margin-top: 50px;
+    }
+    .skill-desc-black {
+        display: block;
+    }
+    .skill-desc-black ul {
+        margin-left: 5px;
+    }
+    .skill-desc-white {
+        display: block;
+    }
+    .skill-desc-white ul {
+        margin-left: 5px;
+    }
+}
+@keyframes services-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

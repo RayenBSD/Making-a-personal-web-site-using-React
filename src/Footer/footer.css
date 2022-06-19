@@ -1,0 +1,50 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-content: center;
+}
+#social-media {
+    width: 100%;
+}
+#social-media ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#social-media ul li {
+    margin: 10px 0;
+}
+#social-media ul li p {
+    padding: 5px 0;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+#social-media ul li a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: medium;
+    color: #f1f1f1;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s ease-in;
+}
+#social-media ul li a:hover {
+    color: #ff6a3d;
+}
+#social-media-title {
+    letter-spacing: 1px;
+    font-size: larger;
+    border-radius: 8px;
+}

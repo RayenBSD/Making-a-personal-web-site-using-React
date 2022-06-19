@@ -1,0 +1,130 @@
+#services-pg {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    background-image: url("./images/Welcome\ to\ the\ Dark\ Side\ •\ r_Amoledbackgrounds.png");
+}
+#static-srv {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    margin: 100px 0;
+}
+#static-srv h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: #608fe8;
+    margin: -3px 0 0 0;
+}
+#static-desc {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    grid-column-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    background-color: #F4DB7D;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #f1f1f1;
+}
+#static-desc h2 {
+    color: #FF6A3D;
+}
+#static-desc ul {
+    list-style: none;
+}
+#static-desc ul li p {
+    text-align: center;
+    color: #1A2238;
+    font-size: larger;
+    font-weight: 500;
+}
+#static-desc p {
+    color: #1A2238;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    padding: 0 5px;
+}
+#static-desc p span {
+    color: #FF6A3D;
+    text-decoration: underline;
+}
+#full-web-app-srv {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-row-gap: 40px;
+}
+#full-web-app-srv h1 {
+    text-align: center;
+    color: #608fe8;
+    font-size: xx-large;
+}
+#full-web-app-desc {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr 10px 1fr;
+    grid-column-gap: 5px;  
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    background-color: #F4DB7D;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #f1f1f1;  
+    width: 90%;
+}
+#full-web-app-desc ul {
+    list-style: none;
+}
+#full-web-app-desc ul li p {
+    text-align: center;
+    font-size: larger;
+    color: #1A2238;
+}
+#full-web-app-desc h2 {
+    text-align: center;
+    color: #FF6A3D;
+}
+#full-web-app-desc p {
+    color: #1A2238;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    padding: 0 5px;   
+}
+#full-web-app-desc p span {
+    color: #FF6A3D;
+    text-decoration: underline;
+}
+@media (max-width: 500px) {
+    #static-desc {
+        grid-column-gap: 0px;
+    }
+    #static-desc ul li p {
+        padding: 0;
+        font-size: medium;
+    }
+    #static-desc p {
+        padding: 0;
+        font-size: small;
+    }
+    #full-web-app-desc {
+        grid-column-gap: 0;
+    }
+    #full-web-app-desc ul li p {
+        padding: 0;
+        font-size: medium;
+    }
+    #full-web-app-desc h2 {
+        visibility: hidden;
+    }
+    #full-web-app-desc p {
+        padding: 0;
+        font-size: small;
+    }
+}
+@media (max-width: 360px) {
+    #full-web-app-desc ul li p {
+        padding: 0;
+        font-size: small;
+    }
+}
