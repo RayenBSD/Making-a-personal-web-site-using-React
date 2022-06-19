@@ -16,10 +16,10 @@ const Contact = () => {
         e.preventDefault();
         
         send (
-            "service_bavk97v",
-            "template_c5mfoya",
+            "",
+            "",
             {sendName, sendEmail, message},
-            "TqE8lWQPHIpuVIueg"
+            ""
         )
         .then ((response) => {
             //console.log(response.text, response.status);
